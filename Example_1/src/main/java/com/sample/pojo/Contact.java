@@ -1,39 +1,39 @@
 package com.sample.pojo;
 
 public class Contact {
-	private String Name;
-	private int runs;
-	private String ground;
+	private String name;
+	private String city;
+	private int contact;
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
-	public Contact(String name, int runs, String ground) {
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public int getContact() {
+		return contact;
+	}
+
+	public void setContact(int contact) {
+		this.contact = contact;
+	}
+
+	public Contact(String name,int contact, String city) {
 		super();
-		Name = name;
-		this.runs = runs;
-		this.ground = ground;
-	}
-
-	public int getRuns() {
-		return runs;
-	}
-
-	public void setRuns(int runs) {
-		this.runs = runs;
-	}
-
-	public String getGround() {
-		return ground;
-	}
-
-	public void setGround(String ground) {
-		this.ground = ground;
+		this.name = name;
+		this.city = city;
+		this.contact = contact;
 	}
 
 }
